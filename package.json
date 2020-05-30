@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-abstract",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "build": "export NODE_ENV=production && babel src --out-dir dist",
     "build-storybook": "build-storybook",
     "prettier:check": "prettier --check 'src/**/*.js'",
-    "eslint:check": "eslint ./src/**/*.js"
+    "eslint:check": "eslint ./src/**/*.js",
+    "prepublish": "yarn test && yarn build"
   },
   "author": "Matthew Claffey",
   "license": "MIT",
