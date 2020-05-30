@@ -12,14 +12,14 @@ import { WithAbstract } from './src'
 ## Installation
 
 ```
-  yarn add @storybook/storybook-addon-abstract --dev
+  yarn add storybook-addon-abstract --dev
 ```
 
 main.js/config.js
 
 ```js
 module.exports = {
-  addons: ['@storybook/addon-abstract/register'],
+  addons: ['storybook-addon-abstract/register'],
 }
 ```
 
@@ -29,7 +29,7 @@ module.exports = {
 
 ```jsx
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
-import { WithAbstract } from '@storybook/addon-abstract'
+import { WithAbstract } from 'storybook-addon-abstract'
 
 <Meta title="Example" />
 
@@ -45,7 +45,7 @@ import { WithAbstract } from '@storybook/addon-abstract'
 ### CSF format
 
 ```jsx
-import { WithAbstract } from '@storybook/addon-abstract'
+import { WithAbstract } from 'storybook-addon-abstract'
 
 export const helloWorld = () => (
   <WithAbstract abstractId="c53e8159-2e24-4118-b02b-6fe4b3a3afee">
