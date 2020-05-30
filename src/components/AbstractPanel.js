@@ -12,7 +12,10 @@ const AbstractPanel = ({ channel, api, active }) => {
   const [state, setState] = useState({ ...initialState })
 
   useEffect(() => {
-    const onAddAbstract = ({ abstractId = initialState.abstractId, allowFullScreen = initialState.allowFullScreen }) => {
+    const onAddAbstract = ({
+      abstractId = initialState.abstractId,
+      allowFullScreen = initialState.allowFullScreen,
+    }) => {
       console.log(abstractId)
       setState({
         abstractId,
