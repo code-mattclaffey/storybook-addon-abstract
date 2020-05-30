@@ -1,6 +1,7 @@
 import React from 'react'
 import { bool } from 'prop-types'
 
+
 const EmptyAbstractIframe = ({ active }) => (
   <div
     style={{
