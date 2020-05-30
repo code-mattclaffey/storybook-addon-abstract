@@ -1,8 +1,3 @@
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
-import { WithAbstract } from './src'
-
-<Meta title="Example" />
-
 # Storybook Abstract Addon
 
 > A abstract design reference tool
@@ -53,11 +48,3 @@ export const helloWorld = () => (
   </WithAbstract>
 )
 ```
-
-<Preview>
-  <Story name="default">
-    <WithAbstract abstractId="c53e8159-2e24-4118-b02b-6fe4b3a3afee">
-      <h1>Hello World</h1>
-    </WithAbstract>
-  </Story>
-</Preview>

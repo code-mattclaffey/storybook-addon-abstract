@@ -45,7 +45,7 @@ const AbstractPanel = ({ channel, api, active }) => {
 AbstractPanel.propTypes = {
   active: bool.isRequired,
   api: object.isRequired,
-  channel: object.isRequired
+  channel: object.isRequired,
 }
 
 export default AbstractPanel

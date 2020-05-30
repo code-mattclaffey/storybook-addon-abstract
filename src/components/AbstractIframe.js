@@ -8,7 +8,7 @@ const AbstractIframe = ({ active, abstractId, allowFullScreen }) => {
       width="100%"
       frameBorder="0"
       src={`https://app.abstract.com/embed/${abstractId}`}
-      style={{display: active ? 'block' : 'none'}}
+      style={{ display: active ? 'block' : 'none' }}
       allowFullScreen={allowFullScreen}
     />
   )
@@ -17,12 +17,12 @@ const AbstractIframe = ({ active, abstractId, allowFullScreen }) => {
 AbstractIframe.propTypes = {
   active: bool.isRequired,
   allowFullScreen: bool.isRequired,
-  abstractId: string.isRequired
+  abstractId: string.isRequired,
 }
 
 AbstractIframe.defaultProps = {
   active: false,
-  allowFullScreen: true
+  allowFullScreen: true,
 }
 
 export default AbstractIframe

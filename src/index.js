@@ -3,11 +3,7 @@ import addons from '@storybook/addons'
 import { bool, string } from 'prop-types'
 import { EVENT_ID } from './shared'
 
-export const WithAbstract = ({
-  children,
-  allowFullScreen,
-  abstractId
-}) => {
+export const WithAbstract = ({ children, allowFullScreen, abstractId }) => {
   addons.getChannel().emit(EVENT_ID, {
     allowFullScreen,
     abstractId,
@@ -15,13 +11,10 @@ export const WithAbstract = ({
   return children
 }
 
-export default ({
-  allowFullScreen,
-  abstractId
-}) => getStory => {
+export default ({ allowFullScreen, abstractId }) => (getStory) => {
   addons.getChannel().emit(EVENT_ID, {
     abstractId,
-    allowFullScreen
+    allowFullScreen,
   })
   return getStory()
 }
@@ -36,6 +29,6 @@ WithAbstract.defaultProps = {
 }
 
 function checkA11y(storyFn, context) {
-  const channel = addons.getChannel();
-  return manager.wrapStory(channel, storyFn, context);
+  const channel = addons.getChannel()
+  return manager.wrapStory(channel, storyFn, context)
 }

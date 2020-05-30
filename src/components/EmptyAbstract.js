@@ -10,12 +10,12 @@ const EmptyAbstractIframe = ({ active }) => (
       color: '#444',
       width: '100%',
       overflow: 'auto',
-      display: active ? 'block' : 'none'
+      display: active ? 'block' : 'none',
     }}
   >
     <strong>Oh Hey! 👋 Add a Abstract design to your story:</strong>
     <pre>
-    {`
+      {`
       import React from 'react'
       import { storiesOf } from '@storybook/react'
       import { WithAbstract } from 'storybook-addon-abstract'
@@ -33,11 +33,11 @@ const EmptyAbstractIframe = ({ active }) => (
 )
 
 EmptyAbstractIframe.propTypes = {
-  active: bool.isRequired
+  active: bool.isRequired,
 }
 
 EmptyAbstractIframe.defaultProps = {
-  active: false
+  active: false,
 }
 
 export default EmptyAbstractIframe

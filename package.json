@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build": "export NODE_ENV=production && babel src --out-dir dist",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prettier:check": "prettier --check 'src/**/*.js'"
   },
   "author": "Matthew Claffey",
   "license": "MIT",
