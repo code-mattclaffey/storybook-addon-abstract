@@ -4,6 +4,7 @@ import { bool, string } from 'prop-types'
 const AbstractIframe = ({ active, abstractId, allowFullScreen }) => {
   return (
     <iframe
+      title="Abstract Design"
       height="100%"
       width="100%"
       frameBorder="0"

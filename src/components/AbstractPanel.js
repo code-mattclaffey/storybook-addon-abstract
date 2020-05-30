@@ -11,15 +11,15 @@ const AbstractPanel = ({ channel, api, active }) => {
   }
   const [state, setState] = useState({ ...initialState })
 
-  const onAddAbstract = ({ abstractId = initialState.abstractId, allowFullScreen = initialState.allowFullScreen }) => {
-    console.log(abstractId)
-    setState({
-      abstractId,
-      allowFullScreen,
-    })
-  }
-
   useEffect(() => {
+    const onAddAbstract = ({ abstractId = initialState.abstractId, allowFullScreen = initialState.allowFullScreen }) => {
+      console.log(abstractId)
+      setState({
+        abstractId,
+        allowFullScreen,
+      })
+    }
+
     if (active) {
       channel.on(EVENT_ID, onAddAbstract)
 
@@ -31,7 +31,7 @@ const AbstractPanel = ({ channel, api, active }) => {
     })
 
     channel.removeListener(EVENT_ID, onAddAbstract)
-  }, [active])
+  }, [active, channel, api, initialState])
 
   const { allowFullScreen, abstractId } = state
 
