@@ -27,8 +27,3 @@ WithAbstract.propTypes = {
 WithAbstract.defaultProps = {
   allowFullScreen: true,
 }
-
-function checkA11y(storyFn, context) {
-  const channel = addons.getChannel()
-  return manager.wrapStory(channel, storyFn, context)
-}
