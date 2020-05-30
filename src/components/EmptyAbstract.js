@@ -1,7 +1,6 @@
 import React from 'react'
 import { bool } from 'prop-types'
 
-
 const EmptyAbstractIframe = ({ active }) => (
   <div
     style={{
@@ -14,7 +13,13 @@ const EmptyAbstractIframe = ({ active }) => (
       display: active ? 'block' : 'none',
     }}
   >
-    <strong>Oh Hey! <span role="img" aria-label="Waving emoji">👋</span> Add a Abstract design to your story:</strong>
+    <strong>
+      Oh Hey!{' '}
+      <span role="img" aria-label="Waving emoji">
+        👋
+      </span>{' '}
+      Add a Abstract design to your story:
+    </strong>
     <pre>
       {`
       import React from 'react'
