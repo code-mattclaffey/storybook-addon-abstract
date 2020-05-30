@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "yarn prettier:check && eslint:check",
+    "test": "yarn prettier:check && yarn eslint:check",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build": "export NODE_ENV=production && babel src --out-dir dist",
     "build-storybook": "build-storybook",
