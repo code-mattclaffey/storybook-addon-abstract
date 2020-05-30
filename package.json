@@ -1,5 +1,5 @@
 {
-  "name": "@storybook/addon-abstract",
+  "name": "storybook-addon-abstract",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
