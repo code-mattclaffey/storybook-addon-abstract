@@ -10,12 +10,10 @@
   yarn add storybook-addon-abstract --dev
 ```
 
-main.js/config.js
+addons.js
 
 ```js
-module.exports = {
-  addons: ['storybook-addon-abstract/register'],
-}
+import 'storybook-addon-abstract/register'
 ```
 
 ## Usage
