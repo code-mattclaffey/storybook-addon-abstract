@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-abstract",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -43,5 +43,11 @@
   },
   "dependencies": {
     "prop-types": "^15.7.2"
-  }
+  },
+  "keywords": [
+    "storybook",
+    "abstract",
+    "addon",
+    "storybook-addon"
+  ]
 }
