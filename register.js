@@ -1,1 +1,1 @@
-require('./src/reqister')
+require('./dist/reqister')
