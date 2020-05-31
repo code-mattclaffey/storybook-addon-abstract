@@ -24,14 +24,7 @@ yarn-error.log*
 
 .env.*
 
-#packages
-/packages/apps/www/public
-/packages/apps/maintenance/public
-/public
-
-# cypress
-/packages/apps/e2e/cypress/videos/*
-packages/apps/e2e/cypress/screenshots/*
-packages/apps/e2e/cypress/results
-
-packages/apps/identity-views/dist/*
+index.js
+register.js
+shared.js
+components/**/*

@@ -1,17 +1,23 @@
 {
   "name": "storybook-addon-abstract",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "yarn prettier:check && yarn eslint:check",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build": "export NODE_ENV=production && babel src --out-dir dist",
+    "build": "export NODE_ENV=production && babel src --out-dir ./",
     "build-storybook": "build-storybook",
     "prettier:check": "prettier --check 'src/**/*.js'",
     "eslint:check": "eslint ./src/**/*.js",
     "prepublish": "yarn test && yarn build"
   },
+  "files": [
+    "index.js",
+    "shared.js",
+    "register.js",
+    "components/**/*"
+  ],
   "author": "Matthew Claffey",
   "license": "MIT",
   "bugs": {
@@ -39,7 +45,8 @@
     "eslint-plugin-react-hooks": "2.x",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "storybook-addon-abstract": "^1.1.2"
   },
   "dependencies": {
     "prop-types": "^15.7.2"
