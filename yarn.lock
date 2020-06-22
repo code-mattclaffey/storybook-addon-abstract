@@ -3,9 +3,9 @@
 
 
 "@babel/cli@^7.10.1":
-  version "7.10.1"
-  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.10.1.tgz#b6e5cd43a17b8f639442ab027976408ebe6d79a0"
-  integrity sha512-cVB+dXeGhMOqViIaZs3A9OUAe4pKw4SBNdMw6yHJMYR7s4TB+Cei7ThquV/84O19PdIFWuwe03vxxES0BHUm5g==
+  version "7.10.3"
+  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.10.3.tgz#4ea83bd997d2a41c78d07263ada3ec466fb3764b"
+  integrity sha512-lWB3yH5/fWY8pi2Kj5/fA+17guJ9feSBw5DNjTju3/nRi9sXnl1JPh7aKQOSvdNbiDbkzzoGYtsr46M8dGmXDQ==
   dependencies:
     commander "^4.0.1"
     convert-source-map "^1.1.0"
@@ -9484,6 +9484,13 @@ store2@^2.7.1:
   version "2.11.2"
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.11.2.tgz#a298e5e97b21b3ce7419b732540bc7c79cb007db"
   integrity sha512-TQMKs+C6n9idtzLpxluikmDCYiDJrTbbIGn9LFxMg0BVTu+8JZKSlXTWYRpOFKlfKD5HlDWLVpJJyNGZ2e9l1A==
+
+storybook-addon-abstract@^1.1.2:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/storybook-addon-abstract/-/storybook-addon-abstract-1.2.0.tgz#6852c3291807fe6356e4a243674cdaa509eb2192"
+  integrity sha512-CIsobLcPvCeSaKo5gEY+/0wi8qc0Ud3TVkIhGQ0jJ2R40qELVwWiu9XSsMEFgXTt3WxHtVZVF/w2mqU6SPWmHA==
+  dependencies:
+    prop-types "^15.7.2"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
