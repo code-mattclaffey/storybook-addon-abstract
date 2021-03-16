@@ -1,7 +1,7 @@
 {
   "name": "storybook-addon-abstract",
   "version": "1.2.1",
-  "description": "",
+  "description": "> A abstract design reference tool",
   "main": "index.js",
   "scripts": {
     "test": "yarn prettier:check && yarn eslint:check",
